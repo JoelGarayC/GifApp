@@ -35,7 +35,7 @@ input{
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill,minmax(min(13rem,100%),1fr));
-  padding: .5rem 0;
+
 }
   .card{
     border-radius: .3rem;
@@ -47,7 +47,7 @@ input{
   }
   .card:hover{
     background-color: var(--gray-color);
-    transform: scale(1.05);
+    transform: scale(1.005);
     transition: all ease .3s;
   }
     .card img{

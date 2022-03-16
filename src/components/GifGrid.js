@@ -2,6 +2,7 @@ import React from 'react'
 import GifGridItem from './GifGridItem';
 // import { getGifs } from './../helpers/getGifs';
 import { useFetchGifs } from './../hooks/useFetchGifs';
+import Loading from './Loading';
 
 const GifGrid = ({category}) => {
 
@@ -17,7 +18,7 @@ const GifGrid = ({category}) => {
     return (
         <>
             <h2>{category}</h2>
-            {loading && <p>Loading</p>}
+            {loading && <Loading/>}
             
             <div className='cont-card'>
                 {images.map((img) => (

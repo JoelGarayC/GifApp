@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GifGridItem = ({title,url}) => {
+const GifGridItem = ({title='No Title',url}) => {
 
     return (
         <div className='card'>
